@@ -98,6 +98,14 @@
     background: url(../../images/cd.png) no-repeat center;
     background-size: 100%;
     position: relative;
+
+    max-width:  100%;
+    display: block;
+    
+    
+    font-size: 0;
+    
+  
 }
 
 
@@ -132,19 +140,39 @@
 /* 唱片歌曲圖片 */
 
 .music-player__image {
-    text-align: center;
+    /* text-align: center;
     width: 70%;
-    height: 54%;
+    height: 35vh;
     
-    position: absolute;
+    position:relative;
     overflow: hidden;
     left: 0;
     right: 0;
-    top: 0;
+    top:0;
     bottom: 0;
-    margin: auto;
+    margin: auto; */
+   
+    width: 100%; 
+    height: 100%;
+    position: absolute;
+    text-align: center;
+}
+.music-player__image:before{
+    content: ''; 
+    display: inline-block;
+    height: 100%;
+    width: 0;
+    vertical-align: middle;
 }
 
+.music-player__image_in {
+    max-width: 70%; 
+    max-height: 70%;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
 
 /* 播放器控件 */
 
